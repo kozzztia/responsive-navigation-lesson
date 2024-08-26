@@ -10,6 +10,8 @@
     --gray-middle: #828282;
     --gray-light: #BDBDBD;
 
+    --asside-width: 220px;
+
 }
 
 * {
@@ -21,16 +23,47 @@
 html,
 body {
     font-family: Montserrat;
+    background: var(--blue-darken);
+}
+main {
+    position: relative;
+    left: var(--asside-width);
+    width: calc(100vw - var(--asside-width));
+    height: 100vh;
+    background: inherit;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    header {
+        width: 100%;
+        height: 80px;
+        background: var(--blue-dark);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+
+    section{
+        background: var(--blue-dark);
+        width :100%;
+        height: 100%;
+        border-radius: 10px;
+        padding: 20px;
+    }
+
 }
 
-aside{
-
-}
-
-header{
-
-}
-
-main{
-    
+aside {
+    position: fixed;
+    background: var(--blue-dark);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: var(--asside-width);
+    padding: 20px;
 }
