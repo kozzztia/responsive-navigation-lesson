@@ -10,7 +10,8 @@
     --gray-middle: #828282;
     --gray-light: #BDBDBD;
 
-    --asside-width: 220px;
+    --aside-width-open: 220px;
+    --aside-width-close: 90px;
 
 }
 
@@ -27,8 +28,8 @@ body {
 }
 main {
     position: relative;
-    left: var(--asside-width);
-    width: calc(100vw - var(--asside-width));
+    left: var(--aside-width-open);
+    width: calc(100vw - var(--aside-width-open));
     height: 100vh;
     background: inherit;
     padding: 20px;
@@ -64,6 +65,10 @@ aside {
     top: 0;
     left: 0;
     bottom: 0;
-    width: var(--asside-width);
+    width: var(--aside-width-open);
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
 }
