@@ -21,6 +21,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+a,h1,h2{
+    user-select: none;
+}
 
 html,
 body {
